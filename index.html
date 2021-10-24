@@ -11,7 +11,10 @@
     />
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
-
+    <script
+      src="https://kit.fontawesome.com/32f374c92f.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,8 +31,10 @@
             <div class="white-box"></div>
             <div class="user-header-container">
               <div class="user-data">
-                <div class="left-buttom"><img src="" alt="Left button"></div>
-                <div class="user-picture"><img src="/images/avatar.jpg" alt="User picture"></div>
+                <div class="left-buttom"><i class="fas fa-angle-left"></i></div>
+                <div class="user-picture">
+                  <img src="/images/avatar.jpg" alt="User picture" />
+                </div>
                 <div class="user-info">
                   <p>Samuel Green</p>
                   <p>Available to Walk</p>
@@ -37,7 +42,7 @@
               </div>
               <div class="right-button">
                 <div class="three-dots-menu">
-
+                  <i class="fas fa-ellipsis-v"></i>
                 </div>
               </div>
             </div>
@@ -49,10 +54,10 @@
             <div class="left-message">
               <p>Could you send over some pictures of your dog, please?</p>
             </div>
-            <div class="right-message">
-              <img src="/images/dog-image-1.jpg" alt="dog picture">
-              <img src="/images/dog-image-2.jpg" alt="dog picture">
-              <img src="/images/dog-image-3.jpg" alt="dog picture">
+            <div class="right-photos">
+              <img src="/images/dog-image-1.jpg" alt="dog picture" />
+              <img src="/images/dog-image-2.jpg" alt="dog picture" />
+              <img src="/images/dog-image-3.jpg" alt="dog picture" />
             </div>
             <div class="right-message">
               <p>Here are a few pictures. She’s a happy girl!</p>
@@ -61,23 +66,34 @@
               <p>Can you make it?</p>
             </div>
             <div class="left-message">
-              <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+              <p>
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
             </div>
             <div class="price-button">
-              <div class="price-radio-button"></div>
-              <div class="price-time-description">30 minute walk</div>
+              <div class="price-button-left-container">
+                <div class="price-radio-button">
+                  <i class="far fa-circle"></i>
+                </div>
+                <div class="price-time-description">30 minute walk</div>
+              </div>
               <div class="price-tag">$29</div>
             </div>
             <div class="price-button">
-              <div class="price-radio-button"></div>
-              <div class="price-time-description">1 hour walk</div>
+              <div class="price-button-left-container">
+                <div class="price-radio-button">
+                  <i class="far fa-circle"></i>
+                </div>
+                <div class="price-time-description">1 hour walk</div>
+              </div>
               <div class="price-tag">$49</div>
             </div>
             <div class="message-box">
               <div class="message-placeholder">Type a message…</div>
-              <div class="send-button"><img src="" alt=""></div>
+              <div class="send-button"><i class="fas fa-angle-right"></i></div>
             </div>
-          </div>               
+          </div>
         </div>
       </div>
       <h1>Simple booking</h1>

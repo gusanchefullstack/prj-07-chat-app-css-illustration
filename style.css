@@ -23,7 +23,7 @@ body {
   background-color: var(--Light-Grayish-Violet);
 }
 .container {
-  margin: 80px 35px 80px 35px;
+  margin: 80px 30px 80px 30px;
   text-align: center;
 }
 h1 {
@@ -36,13 +36,190 @@ h1 {
 
 }
 .phone-container {
- margin: 20px; 
+ margin: 0px auto; 
  border-radius: 25px;
  background-color: var(--White);
  padding: 10px;
  margin-bottom: 50px;
+ max-width: 90%;
 }
 .phone-screen {
   border-radius: 20px;
   background-color: var(--Light-Grayish-Violet);
+}
+.card-header {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: linear-gradient(to right, var(--Light-Violet), var(--Light-Magenta));
+  position: relative;
+}
+.white-box {
+  width: 50%;
+  height: 30px;
+  margin: 0 auto;
+  background-color: var(--White);
+  border-radius: 15px;
+  position: relative;
+  top: -10px;
+}
+.user-header-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.user-data {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+}
+.left-buttom {
+  padding-right: 10px;
+}
+.left-buttom i {
+  color: var(--White);
+}
+.right-button i {
+  color: var(--White);
+  font-size: 10px;
+}
+.user-info {
+  margin-left: 10px;
+}
+.user-info p:first-child {
+  color: var(--White);
+  font-size: 12px;
+  text-align: left;
+  font-weight: 500;
+}
+.user-info p:last-child {
+  color: var(--Pale-Violet);
+  font-size: 8px;
+  text-align: left;
+}
+.app-container {
+  padding: 5px;
+  position: relative;
+  display: grid;
+}
+.left-message {
+  color: var(--Moderate-Violet);
+  font-size: 9px;
+  width: 60%;
+  text-align: left;
+  padding: 10px 15px 10px 10px;
+  background-color: #ede5f3;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 5px;
+  font-weight: 400;
+}
+.right-message {
+  color: var(--Desaturated-Dark-Violet);
+  background-color: var(--White);
+  padding: 8px 8px 8px 8px;
+  font-size: 9px;
+  width: fit-content;
+  max-width: 60%;
+  text-align: left;
+  top: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 5px;
+  margin-left: 5px;
+  font-weight: 500;
+  justify-self: end;
+} 
+.message-box {
+  background-color: var(--White);
+  border-radius: 20px;
+  margin: 5px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.message-placeholder {
+  color: var(--Grayish-Blue);
+  font-size: 13px;
+  padding-left: 15px;
+}
+.send-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: var(--Very-Dark-Desaturated-Violet);
+  border-radius: 50%;
+}
+.send-button {
+  color: var(--White);
+}
+.user-picture img {
+  width: 25px;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid var(--White);
+}
+.right-photos {
+  max-width: 60%;
+  text-align: left;
+  top: 20px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  justify-self: end;
+} 
+.right-photos img {
+  width: 40px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.price-button {
+  background: linear-gradient(to right, var(--Light-Magenta), var(--Light-Violet));
+  width: 70%;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.price-button-left-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.price-button i {
+  color: var(--Very-Light-Magenta);
+}
+.price-time-description {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--Very-Light-Magenta);
+  margin-left: 10px;
+}
+.price-tag {
+  color: var(--Light-Grayish-Violet);
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 10px;
 }
