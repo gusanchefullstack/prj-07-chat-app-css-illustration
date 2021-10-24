@@ -33,7 +33,7 @@ h1 {
 .container > p {
   margin-top: 30px;
   color: var(--Dark-Grayish-Violet);
-
+  line-height: 25px;
 }
 .phone-container {
  margin: 0px auto; 
@@ -67,19 +67,22 @@ h1 {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 10px;
 }
 .user-data {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
-  padding-bottom: 10px;
 }
 .left-buttom {
   padding-right: 10px;
 }
 .left-buttom i {
   color: var(--White);
+}
+.right-button {
+  margin-left: 60px;
 }
 .right-button i {
   color: var(--White);
@@ -106,6 +109,7 @@ h1 {
 }
 .left-message {
   color: var(--Moderate-Violet);
+  opacity: 0.6;
   font-size: 9px;
   width: 60%;
   text-align: left;
@@ -118,10 +122,11 @@ h1 {
   border-bottom-right-radius: 10px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 5px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .right-message {
   color: var(--Desaturated-Dark-Violet);
+  opacity: 0.7;
   background-color: var(--White);
   padding: 8px 8px 8px 8px;
   font-size: 9px;
@@ -214,7 +219,7 @@ h1 {
 .price-time-description {
   font-size: 10px;
   font-weight: 600;
-  color: var(--Very-Light-Magenta);
+  color: var(--Pale-Violet);
   margin-left: 10px;
 }
 .price-tag {
