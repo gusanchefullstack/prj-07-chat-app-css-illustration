@@ -1,6 +1,6 @@
 # Frontend Mentor - Chat app CSS illustration solution
 
-This is a solution to the [Chat app CSS illustration challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Chat app CSS illustration challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY).
 
 ## Table of contents
 
@@ -16,8 +16,6 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -25,24 +23,15 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
-- **Bonus**: See the chat interface animate on the initial load
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](design/ScreenshotDesktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://prj-07-chat-app-css-illustration.vercel.app/)
+- Live Site URL: [Live site URL here](https://prj-07-chat-app-css-illustration.vercel.app/)
 
 ## My process
 
@@ -53,59 +42,74 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+    <script
+      src="https://kit.fontawesome.com/32f374c92f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 ```
+Multiple background images:
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+body {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  background-color: var(--Light-Grayish-Violet);
+  background: url("/images/purple-rectangle.svg"), url("/images/gray-rect.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 250%, 250%;
+  background-position: top -250px left -280px, top 450px left 200px;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+How to create linear gradient:
+```css
+    background: linear-gradient(
+    to right,
+    var(--Light-Violet),
+    var(--Light-Magenta)
+  );
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
+How to use border radius with different number:
+```css
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 5px;
+```
+How to create svg image for background with rx and ry attributes:
+```css
+  <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="50" width="500" height="800" rx="300" ry="200" fill="hsl(270, 20%, 96%)"/>
+</svg>
+```
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Many few projects ahead I will try Tailwindcss and Vite.js.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [SVG Gradients - Linear](https://www.w3schools.com/graphics/svg_grad_linear.asp) - This helped me to add gradients to background image.
+- [rx and ry attributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/rx) - This is an amazing article which helped me finally understand how to create the shapes used for background images using rx and ry attributes.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Gustavo Sanchez](https://www.gusanche.dev)
+- Frontend Mentor - [@gusanchedev](https://www.frontendmentor.io/profile/gusanchedev)
+- Github - [@gusanchedev](https://www.github.com/gusanchedev)
+- Twitter - [@gusanchedev](https://www.twitter.com/gusanchedev)
+- Linkedin - [gusanchedev](https://www.linkedin.com/in/gusanchedev/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Thanks to Mariapaz for being my friend and support 💙
