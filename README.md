@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://prj-07-chat-app-css-illustration.vercel.app/)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/chat-app-css-illustration-solution-r27o0Gru6)
 - Live Site URL: [Live site URL here](https://prj-07-chat-app-css-illustration.vercel.app/)
 
 ## My process
