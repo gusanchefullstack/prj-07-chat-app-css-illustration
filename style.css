@@ -19,29 +19,34 @@
 }
 body {
   font-size: 16px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: var(--Light-Grayish-Violet);
+  background: url("/images/purple-rectangle.svg"), url("/images/gray-rect.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 250%, 250%;
+  background-position: top -250px left -280px, top 450px left 200px;
 }
 .container {
   margin: 80px 30px 80px 30px;
   text-align: center;
 }
-h1 {
+.text-container h1 {
   color: var(--Very-Dark-Desaturated-Violet);
   font-size: 36px;
 }
-.container > p {
+.text-container > p {
   margin-top: 30px;
   color: var(--Dark-Grayish-Violet);
   line-height: 25px;
 }
 .phone-container {
- margin: 0px auto; 
- border-radius: 25px;
- background-color: var(--White);
- padding: 10px;
- margin-bottom: 50px;
- max-width: 90%;
+  margin: 0px auto;
+  border-radius: 25px;
+  background-color: var(--White);
+  padding: 10px;
+  margin-bottom: 50px;
+  max-width: 90%;
+  box-shadow: 6px 20px 20px 2px #e5dfea;
 }
 .phone-screen {
   border-radius: 20px;
@@ -50,7 +55,11 @@ h1 {
 .card-header {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  background: linear-gradient(to right, var(--Light-Violet), var(--Light-Magenta));
+  background: linear-gradient(
+    to right,
+    var(--Light-Violet),
+    var(--Light-Magenta)
+  );
   position: relative;
 }
 .white-box {
@@ -143,7 +152,7 @@ h1 {
   margin-left: 5px;
   font-weight: 500;
   justify-self: end;
-} 
+}
 .message-box {
   background-color: var(--White);
   border-radius: 20px;
@@ -185,7 +194,7 @@ h1 {
   margin-bottom: 10px;
   margin-right: 5px;
   justify-self: end;
-} 
+}
 .right-photos img {
   width: 40px;
   height: auto;
@@ -193,7 +202,11 @@ h1 {
   margin-right: 5px;
 }
 .price-button {
-  background: linear-gradient(to right, var(--Light-Magenta), var(--Light-Violet));
+  background: linear-gradient(
+    to right,
+    var(--Light-Magenta),
+    var(--Light-Violet)
+  );
   width: 70%;
   margin-bottom: 10px;
   margin-left: 5px;
@@ -227,4 +240,33 @@ h1 {
   font-weight: 600;
   font-size: 14px;
   margin-right: 10px;
+}
+
+/* Add media queries for 1440 pixels */
+@media (min-width: 1024px) {
+  body {
+    background: url("/images/purple-rectangle.svg"),
+      url("/images/gray-rect.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 100%;
+    background-position: top -500px left -350px, top 50px left 1150px;
+  }
+  .container {
+    margin: 0 auto;
+    max-width: 70%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 2;
+    gap: 100px;
+    padding: 100px 20px;
+  }
+  .phone-container {
+    grid-column: 1 / 2;
+    max-width: 70%;
+  }
+  .text-container {
+    grid-column: 2 / 3;
+    text-align: left;
+  }
 }
